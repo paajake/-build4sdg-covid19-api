@@ -72,10 +72,10 @@ $app->configure('app');
 |
 */
 
-// $app->middleware([
-//     App\Http\Middleware\AccessLoggingBeforeMiddleware::class,
-//     App\Http\Middleware\AccessLoggingAfterMiddleware::class
-// ]);
+ $app->middleware([
+     App\Http\Middleware\AccessLoggingBeforeMiddleware::class,
+     App\Http\Middleware\AccessLoggingAfterMiddleware::class
+ ]);
 
 // $app->routeMiddleware([
 //     'auth' => App\Http\Middleware\Authenticate::class,
