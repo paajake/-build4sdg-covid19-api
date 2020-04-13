@@ -16,7 +16,7 @@
 use Laravel\Lumen\Routing\Router;
 
 $router->get('/', function () use ($router) {
-    return "Build 4 SDG Covid-19 API Up and Running";
+    return "Build 4 SDG Covid-19 API Up and Running !!!";
 });
 
 
