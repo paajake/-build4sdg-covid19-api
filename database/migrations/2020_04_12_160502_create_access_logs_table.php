@@ -18,7 +18,7 @@ class CreateAccessLogsTable extends Migration
             $table->string('verb');
             $table->string('path');
             $table->smallInteger('status')->nullable();
-            $table->nullableTimestamps(6);
+            $table->timestamps(6);
         });
     }
 
