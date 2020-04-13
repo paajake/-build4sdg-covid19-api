@@ -46,6 +46,11 @@ class ApiController extends Controller
                 $exclude_this_request = false;
                 continue;
             }
+
+            if($log->path[0] != "/"){
+                $log->path = "/".$log->path;
+            }
+
             $payload .= $log->verb . "\t\t" . $log->path . "\t\t" .
                 $log->status . "\t\t" . $log->response_time . "ms\n";
 
